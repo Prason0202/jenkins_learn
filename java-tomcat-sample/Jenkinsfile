@@ -14,9 +14,6 @@ pipeline {
         }
         stage('Deploy in Staging Environment'){
             steps{
-                timeout(time:5 unit:'days'){
-                    input message:'Approve STAGING ENVIRONMENT?'
-                }
 
             
         
@@ -26,6 +23,6 @@ pipeline {
             
         }
         
-        }
+        
     }
 }
